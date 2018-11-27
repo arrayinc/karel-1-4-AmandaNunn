@@ -4,17 +4,18 @@
  * Why so many potholes everywhere? Write a reusable
  * function to make Karel check for potholes
  * autonomously.
- */import "turns";
+ */
+import "turns";
 
 function FixTheStreet(){
 	while(frontIsClear()){
-		fillPotHoles();
+		fillPotHole();
 	}
-		fillPotHoles();
+		fillPotHole();
 }
 
 
-function fillPotHoles(){
+function fillPotHole(){
 	if(rightIsClear()){
 			turnRight();
 			while(frontIsClear()){
@@ -31,5 +32,8 @@ function fillPotHoles(){
 			}
 			turnRight();
 		}
-		if(frontIsClear()){move();}
+
+		if(frontIsClear()){
+			move();
+		}
 }
