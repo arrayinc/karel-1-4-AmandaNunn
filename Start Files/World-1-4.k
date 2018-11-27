@@ -3,5 +3,6 @@
  * ---------------------------
  * Why so many potholes everywhere? Write a reusable
  * function to make Karel check for potholes
- * autonomously. 
+ * autonomously.
  */
+import "turns";
